@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Event Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title">Dev Music Event Feedback Form</h1>
+        <p id="description">General feedback after event to improve our service</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">@Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="amazing@example.com" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="17" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>What's the most genre music you love?</p>
+                <select name="genre" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select genre</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="gospel">Gospel</option>
+                    <option value="blues">Blues</option>
+                    <option value="rnb">RnB</option>
+                    <option value="funk">Funk</option>
+                    <option value="rock">Rock</option>
+                    <option value="metal">Metal</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="raggae">Raggae</option>
+                    <option value="hip-hop">Hip Hop</option>
+                    <option value="techno">Techno</option>
+                    <option value="pop">Pop</option>
+                    <option value="dangdut">Dangdut</option>
+                    <option value="country">Country</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Overall, how would you rate the event</p>
+                <label for="rating">
+                    <input type="radio" name="rating" class="input-radio" value="excelent" checked>
+                    Excelent
+                </label>
+                <label for="rating">
+                    <input type="radio" name="rating" class="input-radio" value="very good">
+                    Very Good
+                </label>
+                <label for="rating">
+                    <input type="radio" name="rating" class="input-radio" value="good">
+                    Good
+                </label>
+                <label for="rating">
+                    <input type="radio" name="rating" class="input-radio" value="fair">
+                    Fair
+                </label>
+                <label for="rating">
+                    <input type="radio" name="rating" class="input-radio" value="poor">
+                    Poor
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="message-like">What did you like about the event?</label>
+                <textarea name="message-like" id="messageLike"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="message-like">What did you dislike about the event?</label>
+                <textarea name="message-dislike" id="messageDislike"></textarea>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved for the event? <span class="clue">(Check all that apply)</span></p>
+                <label for="improved">
+                    <input type="checkbox" name="improved" class="input-radio" value="facility">
+                    Facility
+                </label>
+                <label for="improved">
+                    <input type="checkbox" name="improved" class="input-radio" value="stage">
+                    More Stage
+                </label>
+                <label for="improved">
+                    <input type="checkbox" name="improved" class="input-radio" value="band">
+                    More Artist/Band
+                </label>
+                <label for="improved">
+                    <input type="checkbox" name="improved" class="input-radio" value="games">
+                    More Games
+                </label>
+            </div>
+            <div class="form-group">
+                <button class="btn" id="submit">Submit</button>
+            </div>
+
+        </form>
+
+        <div id="credit">
+            <span>Photo by <a href="https://unsplash.com/@yvettedewit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Yvette de Wit</a> on <a href="https://unsplash.com/s/photos/events-music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></span>
+        </div>
+    </div>
+
+    <!-- CDN Script -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
